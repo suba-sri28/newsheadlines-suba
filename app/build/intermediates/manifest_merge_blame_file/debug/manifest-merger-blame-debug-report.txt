@@ -1,0 +1,157 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.newsheadlines"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:4:5-66
+11-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:5:5-75
+12-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:5:22-73
+13
+14    <application
+14-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:6:5-41:19
+15        android:allowBackup="true"
+15-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:7:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.7.0] C:\Users\Bug\.gradle\caches\8.9\transforms\1c842969da7c527ddd36622c4d442109\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+17        android:dataExtractionRules="@xml/data_extraction_rules"
+17-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:8:9-65
+18        android:debuggable="true"
+19        android:fullBackupContent="@xml/backup_rules"
+19-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:9:9-54
+20        android:icon="@drawable/news_app_icon"
+20-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:10:9-47
+21        android:label="@string/app_name"
+21-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:11:9-41
+22        android:supportsRtl="true"
+22-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:12:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.NewsHeadlines" >
+24-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:13:9-51
+25        <activity
+25-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:15:9-19:58
+26            android:name="com.example.newsheadlines.DisplayNews"
+26-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:16:13-40
+27            android:exported="false"
+27-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:17:13-37
+28            android:label="@string/title_activity_display_news"
+28-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:18:13-64
+29            android:theme="@style/Theme.NewsHeadlines" />
+29-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:19:13-55
+30        <activity
+30-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:20:9-24:58
+31            android:name="com.example.newsheadlines.RegistrationActivity"
+31-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:21:13-49
+32            android:exported="false"
+32-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:22:13-37
+33            android:label="@string/title_activity_registration"
+33-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:23:13-64
+34            android:theme="@style/Theme.NewsHeadlines" />
+34-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:24:13-55
+35        <activity
+35-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:25:9-29:58
+36            android:name="com.example.newsheadlines.MainPage"
+36-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:26:13-37
+37            android:exported="false"
+37-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:27:13-37
+38            android:label="@string/title_activity_main_page"
+38-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:28:13-61
+39            android:theme="@style/Theme.NewsHeadlines" />
+39-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:29:13-55
+40        <activity
+40-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:30:9-40:20
+41            android:name="com.example.newsheadlines.LoginActivity"
+41-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:31:13-42
+42            android:exported="true"
+42-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:32:13-36
+43            android:label="@string/app_name"
+43-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:33:13-45
+44            android:theme="@style/Theme.NewsHeadlines" >
+44-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:34:13-55
+45            <intent-filter>
+45-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:35:13-39:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:36:17-69
+46-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:36:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:38:17-77
+48-->E:\NewsHeadlines\app\src\main\AndroidManifest.xml:38:27-74
+49            </intent-filter>
+50        </activity>
+51
+52        <service
+52-->[androidx.room:room-runtime:2.5.0] C:\Users\Bug\.gradle\caches\8.9\transforms\997ac1fb7fcbe98fde283eeb1c1baf48\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+53            android:name="androidx.room.MultiInstanceInvalidationService"
+53-->[androidx.room:room-runtime:2.5.0] C:\Users\Bug\.gradle\caches\8.9\transforms\997ac1fb7fcbe98fde283eeb1c1baf48\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+54            android:directBootAware="true"
+54-->[androidx.room:room-runtime:2.5.0] C:\Users\Bug\.gradle\caches\8.9\transforms\997ac1fb7fcbe98fde283eeb1c1baf48\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+55            android:exported="false" />
+55-->[androidx.room:room-runtime:2.5.0] C:\Users\Bug\.gradle\caches\8.9\transforms\997ac1fb7fcbe98fde283eeb1c1baf48\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+56
+57        <activity
+57-->[androidx.compose.ui:ui-tooling:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\75d8dba45bc19a6aac2475bbf3eeea83\transformed\ui-tooling-1.2.0\AndroidManifest.xml:24:9-26:39
+58            android:name="androidx.compose.ui.tooling.PreviewActivity"
+58-->[androidx.compose.ui:ui-tooling:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\75d8dba45bc19a6aac2475bbf3eeea83\transformed\ui-tooling-1.2.0\AndroidManifest.xml:25:13-71
+59            android:exported="true" />
+59-->[androidx.compose.ui:ui-tooling:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\75d8dba45bc19a6aac2475bbf3eeea83\transformed\ui-tooling-1.2.0\AndroidManifest.xml:26:13-36
+60        <activity
+60-->[androidx.compose.ui:ui-test-manifest:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\a55af3e58867fad1ab97b9e5c2afee1f\transformed\ui-test-manifest-1.2.0\AndroidManifest.xml:24:9-26:39
+61            android:name="androidx.activity.ComponentActivity"
+61-->[androidx.compose.ui:ui-test-manifest:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\a55af3e58867fad1ab97b9e5c2afee1f\transformed\ui-test-manifest-1.2.0\AndroidManifest.xml:25:13-63
+62            android:exported="true" />
+62-->[androidx.compose.ui:ui-test-manifest:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\a55af3e58867fad1ab97b9e5c2afee1f\transformed\ui-test-manifest-1.2.0\AndroidManifest.xml:26:13-36
+63
+64        <provider
+64-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:25:9-33:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:26:13-67
+66            android:authorities="com.example.newsheadlines.androidx-startup"
+66-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:27:13-68
+67            android:exported="false" >
+67-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:28:13-37
+68            <meta-data
+68-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+69-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+70                android:value="androidx.startup" />
+70-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+71        </provider>
+72
+73        <receiver
+73-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+74-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+75            android:directBootAware="false"
+75-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+76            android:enabled="true"
+76-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+77            android:exported="true"
+77-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+78            android:permission="android.permission.DUMP" >
+78-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+83-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\Bug\.gradle\caches\8.9\transforms\898940e2ef0e381420797e7533d89569\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>
